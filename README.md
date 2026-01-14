@@ -44,7 +44,7 @@ pip install gust
 ### From Source
 
 ```bash
-git clone https://github.com/spectrocloud/gust.git
+git clone https://github.com/blik616287/gust.git
 cd gust
 pip install .
 ```
@@ -52,7 +52,7 @@ pip install .
 ### Development Installation
 
 ```bash
-git clone https://github.com/spectrocloud/gust.git
+git clone https://github.com/blik616287/gust.git
 cd gust
 make install-dev
 ```
@@ -234,7 +234,7 @@ Example: `john-doe-1704067200-dev-test`
 ### Setup
 
 ```bash
-git clone https://github.com/spectrocloud/gust.git
+git clone https://github.com/blik616287/gust.git
 cd gust
 make install-dev
 ```
