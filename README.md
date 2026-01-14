@@ -99,7 +99,7 @@ make install-dev
 | Variable | Default | Description |
 |----------|---------|-------------|
 | `SSH_KEY_DIR` | `~/.ssh` | Directory for storing SSH keys |
-| `GITHUB_USERNAME` | Auto-detected via `gh` | GitHub username for ZTP script |
+| `GITHUB_USERNAME` | Auto-detected via `gh` | GitHub username for ZTP script (only needed if `gh` CLI detection fails) |
 
 ### Command-Line Options
 
