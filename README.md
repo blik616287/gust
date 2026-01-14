@@ -243,7 +243,7 @@ make install-dev
 
 | Target | Description |
 |--------|-------------|
-| `make` | Run checks and tests (default) |
+| `make` | Full build: clean, install-dev, check, coverage, build, install (default) |
 | `make install` | Install package |
 | `make install-dev` | Install with dev dependencies |
 | `make uninstall` | Uninstall package |
@@ -255,7 +255,6 @@ make install-dev
 | `make format` | Format code with black |
 | `make format-check` | Check formatting |
 | `make check` | Run lint + format-check |
-| `make ci` | Full CI pipeline |
 | `make help` | Show all targets |
 
 ### Running Tests
@@ -334,7 +333,7 @@ You can only manage simulations you created. Check the owner column in `gust --l
 1. Fork the repository
 2. Create a feature branch (`git checkout -b feature/amazing-feature`)
 3. Make your changes
-4. Run tests and linting (`make ci`)
+4. Run tests and linting (`make`)
 5. Commit your changes (`git commit -m 'Add amazing feature'`)
 6. Push to the branch (`git push origin feature/amazing-feature`)
 7. Open a Pull Request

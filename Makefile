@@ -10,8 +10,8 @@ PACKAGE := gust
 SRC_DIR := gust
 TEST_DIR := tests
 
-# Default target
-all: check test
+# Default target - do everything
+all: clean install-dev check coverage build install
 
 # Install package in production mode
 install:
@@ -67,11 +67,8 @@ format:
 format-check:
 	$(BLACK) --check $(SRC_DIR)/ $(TEST_DIR)/
 
-# Run all checks (lint + format-check + test)
+# Run all checks (lint + format-check)
 check: lint format-check
-
-# Run full CI pipeline
-ci: clean install-dev check coverage
 
 # Show help
 help:
@@ -80,7 +77,7 @@ help:
 	@echo "Usage: make [target]"
 	@echo ""
 	@echo "Targets:"
-	@echo "  all          Run checks and tests (default)"
+	@echo "  all          Full build: clean, install-dev, check, coverage, build, install (default)"
 	@echo "  install      Install package in production mode"
 	@echo "  install-dev  Install package in development mode with dev dependencies"
 	@echo "  uninstall    Uninstall the package"
@@ -93,5 +90,4 @@ help:
 	@echo "  format       Format code with black"
 	@echo "  format-check Check code formatting without changes"
 	@echo "  check        Run lint and format-check"
-	@echo "  ci           Run full CI pipeline (clean, install-dev, check, coverage)"
 	@echo "  help         Show this help message"
