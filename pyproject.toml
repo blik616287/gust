@@ -48,9 +48,9 @@ dev = [
 gust = "gust.cli:main"
 
 [project.urls]
-Homepage = "https://github.com/spectrocloud/gust"
-Documentation = "https://github.com/spectrocloud/gust#readme"
-Repository = "https://github.com/spectrocloud/gust"
+Homepage = "https://github.com/blik616287/gust"
+Documentation = "https://github.com/blik616287/gust#readme"
+Repository = "https://github.com/blik616287/gust"
 
 [tool.setuptools.packages.find]
 where = ["."]
