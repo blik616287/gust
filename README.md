@@ -345,11 +345,11 @@ You can only manage simulations you created. Check the owner column in `gust --l
 - Test coverage must be >= 95%
 - Code must be formatted with black
 
-## License
-
-MIT License - see [LICENSE](LICENSE) for details.
-
 ## Links
 
 - [NVIDIA AIR](https://air.nvidia.com/)
 - [NVIDIA AIR Documentation](https://docs.nvidia.com/networking-ethernet-software/nvidia-air/)
+
+## License
+
+[MIT](LICENSE) © 2026 Martin Forde <mforde84@gmail.com>, [Blik Labs](https://bliklabs.com).
